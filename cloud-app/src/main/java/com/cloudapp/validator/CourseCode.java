@@ -25,15 +25,3 @@ public @interface CourseCode {
 	// define default payloads
 	public Class<? extends Payload>[] payload() default {};
 }
-
-
-
-
-
-
-
-
-
-
-
-
