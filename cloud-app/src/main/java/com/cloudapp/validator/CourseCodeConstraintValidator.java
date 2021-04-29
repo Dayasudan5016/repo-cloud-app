@@ -26,4 +26,4 @@ public class CourseCodeConstraintValidator implements ConstraintValidator<Course
 		}
 		return result;
 	}
-}
+} 
