@@ -13,7 +13,7 @@ import com.cloudapp.entity.InstructorDetail;
  * A DAO Implementation class which implements instructorDAO interface 
  */
 @Repository
-public class InstructorDaoImpl implements InstructorDAO {
+public class InstructorDaoImpl implements InstructorDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;

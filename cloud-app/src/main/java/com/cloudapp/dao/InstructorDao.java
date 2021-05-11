@@ -3,7 +3,7 @@ package com.cloudapp.dao;
 /*
  * An Interface for defining methods in DAO
  */
-public interface InstructorDAO {
+public interface InstructorDao {
 	void saveInstructor();
 
 	void deleteInstructor(int instructorId);

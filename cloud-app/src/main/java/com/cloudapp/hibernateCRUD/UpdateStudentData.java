@@ -3,7 +3,7 @@ package com.cloudapp.hibernateCRUD;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import com.example.entity.Student;
+import com.cloudapp.entity.Student;
 
 public class UpdateStudentData {
 

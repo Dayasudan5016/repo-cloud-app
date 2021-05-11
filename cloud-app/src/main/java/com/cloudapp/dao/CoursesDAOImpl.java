@@ -9,7 +9,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.example.springBoot.CRUD.entity.Courses;
+import com.cloudapp.entity.Courses;
 
 @Repository
 public class CoursesDAOImpl implements CoursesDAO {

@@ -2,7 +2,7 @@ package com.cloudapp.service;
 
 import java.util.List;
 
-import com.example.springBoot.CRUD.entity.Courses;
+import com.cloudapp.entity.Courses;
 
 public interface CoursesService {
 	public List<Courses> findAll();

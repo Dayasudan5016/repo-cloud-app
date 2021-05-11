@@ -2,7 +2,7 @@ package com.cloudapp.dao;
 
 import java.util.List;
 
-import com.example.springBoot.CRUD.entity.Courses;
+import com.cloudapp.entity.Courses;
 
 public interface CoursesDAO {
 	public List<Courses> findAll();

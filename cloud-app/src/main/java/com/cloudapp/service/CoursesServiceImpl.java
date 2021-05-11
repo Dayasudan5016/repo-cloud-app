@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.springBoot.CRUD.dao.CoursesDAO;
-import com.example.springBoot.CRUD.entity.Courses;
+import com.cloudapp.dao.CoursesDAO;
+import com.cloudapp.entity.Courses;
 @Service
 public class CoursesServiceImpl implements CoursesService {
 
