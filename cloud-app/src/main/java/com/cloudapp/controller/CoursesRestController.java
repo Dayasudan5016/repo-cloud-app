@@ -17,7 +17,9 @@ import com.cloudapp.service.CoursesService;
 @RestController
 @RequestMapping("/api")
 public class CoursesRestController {
+	
 	private CoursesService coursesService;
+	
 	@Autowired
 	public CoursesRestController(CoursesService theCoursesService) {
 		coursesService=theCoursesService;
@@ -30,15 +32,18 @@ public class CoursesRestController {
 	
 	@GetMapping("/courses/{courseId}")
 	public Courses getCourses(@PathVariable int courseId){
+		
 		Courses theCourses=coursesService.findById(courseId);
 		if(theCourses==null) {
 			throw new RuntimeException("Course id not found- "+courseId);
 		}
+		
 		return theCourses;
 	}
 	
 	@PostMapping("/courses")
 	public Courses addCourses(@RequestBody Courses theCourses) {
+		
 		theCourses.setId(0);
 		coursesService.save(theCourses);
 		return theCourses;
@@ -53,10 +58,12 @@ public class CoursesRestController {
 	
 	@DeleteMapping("/courses/{courseId}")
 	public String deleteCourses(@PathVariable int courseId){
+		
 		Courses theCourses=coursesService.findById(courseId);
 		if(theCourses==null) {
 			throw new RuntimeException("Course id not found- "+courseId);
 		}
+		
 		coursesService.deleteById(courseId);
 		return "Deleted course id-"+courseId;
 	}
