@@ -41,9 +41,7 @@ public class CustomerController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(
-			@Valid @ModelAttribute("customer") Customer theCustomer,
-			BindingResult theBindingResult) {
+	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer,BindingResult theBindingResult) {
 		
 		System.out.println("Last name: |" + theCustomer.getLastName() + "|");
 		
