@@ -159,16 +159,3 @@ select * from toll_details where highway_city in (SELECT cities_crossing_by from
 select * from toll_details where highway_city in ('chennai', 'villupuram', 'salem', 'trichy', 'madurai', 'virudhunagar', 'tirunelveli') and approval="approved" order by toll_id;
 SELECT * from toll_details WHERE highway_city="virudhunagar" AND approval="approved";
 SELECT cities_crossing_by from toll_gate_generator WHERE from_place="chennai" AND to_place="tirunelveli" AND approval="approved";
-
-
-
-
-
-
-
-
-
-
-
-
-
